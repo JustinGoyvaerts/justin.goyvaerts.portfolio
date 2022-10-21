@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Goyvaerts Portfolio</title>
+
+    <!-- links-start  -->
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+      integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- icon -->
+    <link rel="icon" href="img/icon/jg-icon.png" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- links-end  -->
+
+    <meta
+      name="theme-color"
+      content="hsl(197, 100%, 70%)"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="hsl(199, 78%, 55%)"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+
+  <header>
+    <!-- nav -->
+    <label for="burger"><i class="fa-solid fa-bars"></i> </label>
+    <input type="checkbox" id="burger" />
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#cv">Curriculum Vitae</a></li>
+        <li><a href="#portfolio">My Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- splash screen -->
+    <section id="splash">
+      <img src="img/icon/IMG_3428.jpg" alt="a photo of me" id="pfp" />
+      <div>
+        <p id="intro">Hi My Name is Justin</p>
+        <p>I am a student of Technische Scholen Mechelen</p>
+      </div>
+    </section>
+    <!-- about me -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <article>
+        <div>
+          <p>Hello</p>
+          <p>
+            I'm Justin Goyvaerts. Well actually my real name is
+            <i>Jose Augustine Goyvaerts</i> but I perfer Justin. It's way easier
+            to pronounce and to remember.
+          </p>
+          <p>
+            But anyway I'm 17 years old, I study Multimedia at
+            <a href="https://tsmmechelen.eu/">Technische Scholen Mechelen</a>
+            and I live in Heist-op-den-Berg.
+          </p>
+          <p>My interests are: Videography, Photography, Art and Webdesign.</p>
+          <p>
+            I don't have a clear plan for the future or what I'm going to do
+            yet, but here on this website I'll show what I can already do well
+            in my opinion. Even though I think it's good and amazing I'll keep
+            on improving my skills.
+          </p>
+        </div>
+        <div>
+          <img src="img/icon/IMG_1165.JPG" alt="" id="pfp-2" />
+        </div>
+      </article>
+    </section>
+    <!-- cv -->
+    <section id="cv">
+      <article>
+        <h2>Curriculum Vitae</h2>
+        <a href="img/Justin_Goyvaerts-CV-2022.pdf"
+          ><img src="img/Justin_Goyvaerts-CV-2022.png" alt=""
+        /></a>
+      </article>
+    </section>
+    <!-- portfolio -->
+    <section id="portfolio">
+      <div>
+        <h2>My Work</h2>
+        <h3>Recents</h3>
+      </div>
+      <article id="carousel-article">
+        <div class="carousel">
+          <button class="carousel_button carousel_button-left is-hidden">
+            <img src="img/icon/left-arrow.png" alt="" />
+          </button>
+
+          <div class="carousel_track-container">
+            <ul class="carousel_track">
+              <li class="carousel_slide current-slide">
+                <img class="carousel_img" src="img/IMG_1197.JPG" alt="" />
+              </li>
+              <li class="carousel_slide">
+                <img class="carousel_img" src="img/IMG_1195.JPG" alt="" />
+              </li>
+              <li class="carousel_slide">
+                <img class="carousel_img" src="img/IMG_6293.JPG" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel_button carousel_button-right">
+            <img src="img/icon/right-arrow.png" alt="" />
+          </button>
+
+          <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+          </div>
+        </div>
+      </article>
+      <div>
+        <h3>Library</h3>
+      </div>
+      <article id="projecten">
+        <div class="galerij-rij">
+          <div class="galerij-kolom">
+            <img src="img/IMG_1054.JPG" alt="foto" />
+            <img src="img/IMG_1110.JPG" alt="foto" />
+            <img src="img/IMG_1155.JPG" alt="foto" />
+            <img src="img/IMG_1156.JPG" alt="foto" />
+            <img src="img/IMG_1157.JPG" alt="foto" />
+            <img src="img/IMG_1201.JPG" alt="foto" />
+          </div>
+          <div class="galerij-kolom">
+            <img src="img/IMG_1158.JPG" alt="foto" />
+            <img src="img/IMG_1159.JPG" alt="foto" />
+            <img src="img/IMG_1160.JPG" alt="foto" />
+            <img src="img/IMG_1194.JPG" alt="foto" />
+            <img src="img/IMG_1195.JPG" alt="foto" />
+            <img src="img/IMG_1196.JPG" alt="foto" />
+          </div>
+          <div class="galerij-kolom">
+            <img src="img/IMG_1197.JPG" alt="foto" />
+            <img src="img/IMG_1198.JPG" alt="foto" />
+            <img src="img/IMG_1199.JPG" alt="foto" />
+            <img src="img/IMG_4543.jpg" alt="foto" />
+            <img src="img/IMG_6293.JPG" alt="foto" />
+            <img src="img/IMG_1200.JPG" alt="foto" />
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div id="contact-form">
+        <form
+          action="https://formsubmit.co/justin.goyvaerts828@outlook.com"
+          method="POST"
+          class="form-floating"
+        >
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="form-control"
+              id="floatingInput"
+              required
+            />
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="surname"
+              placeholder="Surname"
+              class="form-control"
+              id="floatingInput"
+              required
+            />
+            <label for="floatingInput">Surname</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              class="form-control"
+              id="floatingInput"
+              required
+            />
+            <label for="floatingInput">E-mail</label>
+          </div>
+          <input type="hidden" name="_subject" value="You've Got Mail!" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for your submission"
+          />
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              name="text"
+              placeholder="Message"
+              class="form-control"
+              id="floatingInput"
+              required
+            />
+            <label for="floatingInput">Text</label>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- script -->
+    <script src="js/carousel.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+      integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+  <!-- footer -->
+  <footer>
+    <div>
+      <ul>
+        <a href="https://www.instagram.com/justin_gyv/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100086611010445"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/justingoyvaerts/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </ul>
+    </div>
+    <span>
+      <a href="#"><i class="fa-solid fa-chevron-up"> Go back up</i></a>
+    </span>
+    <span>
+      <p>© Justin Goyvaerts.</p>
+      <p>All rights reserved</p></span
+    >
+  </footer>
+</html>
