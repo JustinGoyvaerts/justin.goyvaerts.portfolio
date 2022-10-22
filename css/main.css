@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: default;
+  font-family: "Rubik", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background: hsl(240, 3%, 11%) !important;
+}
+
+/* scrollbar start */
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background: hsl(240, 3%, 11%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(240, 24%, 96%);
+}
+
+/* scrollbar end */
+
+/* navigation start */
+
+header {
+  position: fixed !important;
+  z-index: 100;
+}
+
+header nav {
+  transform: translateY(-1.5rem) !important;
+  position: fixed !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row-reverse !important;
+  height: 4rem !important;
+  width: 100% !important;
+  background: hsla(0, 0%, 0%, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+}
+
+ul {
+  margin: 0 !important;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline !important;
+}
+
+nav ul li a {
+  color: hsl(240, 24%, 96%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem !important;
+  margin: 5rem 1.5rem 0 1.5rem !important;
+  transition: ease-in-out 0.3s all;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+#burger {
+  visibility: hidden;
+}
+
+header label {
+  visibility: hidden;
+}
+
+/* navigation end */
+
+/* splash-screen start */
+
+#splash {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+    url(../img/background/splash.png);
+  background-position: 0px 90%;
+  background-size: cover;
+  background-attachment: fixed;
+
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#pfp {
+  width: 20vw;
+  border-radius: 100%;
+  border: solid 0.5vw hsl(197, 100%, 70%);
+}
+
+#splash #intro {
+  color: hsl(197, 100%, 70%);
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+#splash p {
+  color: hsl(240, 24%, 96%);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* splash-screen end */
+
+/* main-sections start */
+
+section {
+  font-family: "Rubik", sans-serif;
+  padding: 10rem;
+}
+
+section a {
+  text-decoration: none !important;
+  color: hsl(0, 0%, 50%);
+  cursor: pointer !important;
+}
+
+section h2 {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+}
+
+section article {
+  display: flex;
+}
+
+/* main-sections end */
+
+/* about-me-section start */
+
+#about-me {
+  background: hsl(240, 6%, 83%);
+}
+
+#about-me article p {
+  color: hsl(240, 3%, 11%);
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  width: 90%;
+  margin: 0 !important;
+  text-align: justify;
+  background-color: hsl(240, 24%, 96%);
+}
+
+#about-me h2 {
+  color: hsl(199, 78%, 55%);
+}
+
+#pfp-2 {
+  width: 80vw;
+  border-radius: 50px;
+  border: solid 0.5vw hsl(199, 78%, 55%);
+}
+
+/* about-me-section end */
+
+/* cv-section start */
+
+#cv {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+    url(../img/background/cv.png);
+  background-position: 0px 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#cv article {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cv img {
+  width: 40vw;
+  transition: ease-in-out 0.3s all;
+}
+#cv h2 {
+  color: hsl(197, 100%, 70%);
+}
+
+/* cv-section end */
+
+/* portfolio-section start */
+
+#portfolio {
+  background: hsl(240, 6%, 83%);
+}
+
+#portfolio div {
+  text-align: center;
+}
+
+#portfolio div h2 {
+  color: hsl(199, 78%, 55%);
+}
+
+#portfolio div h3 {
+  color: hsl(240, 3%, 11%);
+}
+
+/* more code in carousel.css */
+/* portfolio-section end */
+
+/* gallery-section start */
+
+#projecten .galerij-rij {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+#projecten .galerij-kolom {
+  flex: 33%;
+  padding: 0 0.5em;
+}
+
+#projecten .galerij-kolom img {
+  display: block;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  filter: grayscale(1);
+  transition: ease-in-out 0.3s all;
+}
+
+/* gallery-section end */
+
+/* contact-section start */
+
+#contact {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+    url(../img/background/contact.png);
+  background-position: 0px 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#contact h2 {
+  color: hsl(197, 100%, 70%);
+  text-align: center;
+}
+
+#contact form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto auto auto;
+}
+#contact form input {
+  font-family: "Rubik", sans-serif !important;
+  border-radius: 15px !important;
+  border-style: none !important;
+}
+#contact form button {
+  padding: 1rem;
+  margin: 1rem;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out all;
+  color: hsl(199, 78%, 55%);
+  background: hsl(240, 24%, 96%);
+}
+#contact form input:hover {
+  cursor: text;
+}
+
+/* contact-section end */
+
+/* footer start */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  background: hsl(240, 3%, 11%);
+  z-index: 100;
+}
+
+footer ul i {
+  font-size: 2rem;
+  margin: 0 2rem 0 2rem;
+  cursor: pointer;
+  float: center;
+}
+
+footer span {
+  color: hsl(240, 24%, 96%);
+  font-size: 1rem;
+  margin: 0 2rem 0 2rem;
+}
+
+footer span i {
+  cursor: pointer;
+  color: hsl(199, 78%, 55%);
+}
+
+footer p {
+  margin: 0;
+}
+
+.fa-instagram {
+  background: linear-gradient(100deg, hsl(276, 100%, 55%), hsl(45, 99%, 50%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-facebook {
+  background: linear-gradient(100deg, hsl(202, 97%, 54%), hsl(212, 97%, 45%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-linkedin-in {
+  color: hsl(210, 90%, 40%);
+}
+
+/* footer end */
+
+/* media-queries start max-width 1000px */
+
+@media (max-width: 1000px) {
+  #projecten .galerij-kolom {
+    flex: 50%;
+  }
+  section {
+    font-family: "Rubik", sans-serif;
+    padding: 2.5rem;
+  }
+  section#about-me {
+    padding: 1.2rem;
+  }
+  #about-me h2 {
+    margin: 2rem 0 2rem 0;
+  }
+  #about-me article {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me article p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  #about-me article i {
+    font-size: 1.2rem;
+  }
+  #about-me article div {
+    margin: 0 0 5vw 0;
+  }
+  #pfp-2 {
+    display: none;
+  }
+  #about-me article p {
+    width: 100%;
+  }
+  #about-me h2 {
+    text-align: center;
+  }
+  #cv img {
+    width: 50vw;
+    transition: ease-in-out 0.3s all;
+  }
+
+  header {
+    position: fixed !important;
+  }
+
+  #burger {
+    visibility: visible !important;
+  }
+
+  header label {
+    visibility: visible !important;
+  }
+
+  header nav {
+    display: none !important;
+  }
+  input#burger:checked + nav {
+    display: contents !important;
+    z-index: 101 !important;
+    overflow-y: auto !important;
+  }
+  header input {
+    display: none !important;
+  }
+  i.fa-bars {
+    font-size: 2rem !important;
+    cursor: pointer;
+    transform: translate(2rem, 2rem) !important;
+    color: hsl(0, 0%, 100%) !important;
+    transition: ease-in-out 0.3s all !important;
+    text-shadow: 0 0 1rem hsl(0, 0%, 0%, 0.5) !important;
+  }
+  nav ul {
+    background: hsla(0, 0%, 0%, 0.5) !important;
+    padding: 3rem 0 1rem 0 !important;
+    margin: -3rem 0 0 0 !important;
+    height: 110vh !important;
+  }
+
+  nav ul li a {
+    display: flex !important;
+    list-style: none !important;
+    font-size: 1.5rem !important;
+    color: hsl(240, 24%, 96%);
+    transition: ease-in-out 0.3s all !important;
+  }
+  nav ul li a:hover {
+    text-decoration: none !important;
+  }
+
+  #splash {
+    background-image: linear-gradient(
+        hsla(0, 0%, 0%, 0.7),
+        hsla(0, 0%, 0%, 0.7)
+      ),
+      url(../img/background/splash.png);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  #cv {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+      url(../img/background/cv.png);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+  }
+  #contact {
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
+      url(../img/background/contact.png);
+    background-position: 0 0;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:  cover;
+    max-width: 100%;
+  }
+
+  #splash #intro {
+    font-size: 3rem;
+  }
+  #splash p {
+    font-size: 1.5rem;
+  }
+
+  #pfp {
+    width: 50vw;
+    border: solid 1.5vw hsl(197, 100%, 70%);
+  }
+}
+
+/* media-queries end max-width 1000px */
+
+/* media-queries start max-width 600px */
+
+@media (max-width: 800px) {
+  #projecten .galerij-kolom {
+    flex: 100%;
+  }
+
+  #contact {
+    padding: 4rem 0 4rem 0;
+  }
+
+  #cv img {
+    width: 80vw;
+  }
+
+  #contact form input {
+    width: 100%;
+  }
+  #contact form button {
+    width: 90%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    z-index: 100;
+  }
+  footer ul i {
+    font-size: 8vw;
+    margin: 1vw;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  footer div {
+    margin: 2vw;
+  }
+  footer span {
+    font-size: 0.8rem;
+    margin: 2vw;
+  }
+  footer p {
+    margin: 0;
+  }
+}
+
+/* media-queries start max-width 600px */
